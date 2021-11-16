@@ -49,12 +49,6 @@ function App() {
         }
     ];
 
-    const inputArr = [{
-        type: "text",
-        id: 1,
-        value: ""
-    }];
-
     const [pagination, setPagination] = useState({
         page: 0,
         size: 10,
@@ -85,6 +79,7 @@ function App() {
                     break;
                 case filters.NOFILTER:
                     requestParams = {};
+                    break;
                 default:
                     console.log("No filter");
             }

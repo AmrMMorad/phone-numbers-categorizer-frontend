@@ -1,3 +1,9 @@
+# How to run
+1. docker build -t jumia/phone-categorizer-frontend-docker .
+2. docker run -p 3000:3000 jumia/phone-categorizer-frontend-docker
+
+Note: change the endpoint in App.js to call the server (here both applications are running on the same machine, so localhost is used)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
